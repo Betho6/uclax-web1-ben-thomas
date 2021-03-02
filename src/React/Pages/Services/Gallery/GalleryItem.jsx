@@ -19,22 +19,25 @@ const GalleryItem = ({ item }) => {
     }
 
     return (
-            <GalleryItemStyled className='GalleryItem'>
-            <div onClick= { handleOnShow }>           
-                <img src={ item.image } alt={item.title} />
-                {/* <h2>{ item.title } </h2> */}
-                {/* <h3>{ item.category }</h3> */}
-            </div>
+        <GalleryItemStyled className='GalleryItem'>
+        <div class='piece' onClick= { handleOnShow }>           
+            <img src={ item.image } alt={item.title} />
+            <h2>{ item.title } </h2> 
+            <h3>{ item.category }</h3> 
+        </div>
 
 
-            <LightBox 
-                show= { showLightbox }
-                onHide={ handleOnHide }
-            />
-                <img src={ item.image } alt={item.title} />
-                <h2>{item.title} </h2>
+        <LightBox 
+            show= { showLightbox }
+            onHide={ handleOnHide }
+        >
+            <img src={ item.image } alt={item.title} />
+            <h2>{ item.title } </h2> 
+            <h3>{ item.category }</h3>  
+        </LightBox>
 
-            </GalleryItemStyled>
+
+        </GalleryItemStyled>
     );
 }
 
@@ -45,6 +48,16 @@ export default GalleryItem;
 const GalleryItemStyled = styled.div`
 position: relative;
 margin: 10px;
+
+.piece{
+    h2{
+        position: absolute;
+        bottom: 0px; left:0px; right: 0px;
+        background-color: rgba(255, 255, 255, 0.462);
+        margin: 0px;
+        padding: 5px;
+        text-align: right;
+    }
 
 h2{
     position: absolute;
@@ -62,7 +75,14 @@ h3 {
     margin: 0px;
     padding: 5px;
     text-align: right;
-
 }
+
+.Lightbox{
+        img{
+            display:block;
+            max-width:100%;
+        
+        }
+    }
     
 `;
