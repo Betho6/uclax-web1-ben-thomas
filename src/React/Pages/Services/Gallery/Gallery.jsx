@@ -11,7 +11,7 @@ const Gallery = ({services, catChosen }) => {
             {
                 services.packages
                 .filter((item) =>{
-                    return (item.category === 'All' || catChosen)
+                    return (catChosen === 'All' || item.category === catChosen)
                 })
 
                 .map((item, idx) => {  

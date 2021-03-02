@@ -56,6 +56,14 @@ const Essay = () => {
         </h2>
         <p>An Image should be used as part of the conent when it is important for understanding the information on the page. One advantage of images declared with an HTML img tag is the ability to add alternate text. This helps for accesibility, so if the images are requiered for understanding the conent of the page it should be written using an HTML tag. Another benifit is for Search Engine optimization. Web Search engines do not see images so they will pull results using alternate text.
         </p>Incorperating an image into the apperaence using CSS is optimal when the image serves the display but not the content of the site. Using CSS you have easier options to manipulate and style your image, or incorperate it into the background.<p></p>
+        <h2>What is considered the right size for an image or video asset?</h2>
+        <p>When building your application asset size is important as it can effect load times and search engine opimization. The ideal size for an image is only large enough to fill the container its in. For an image designed to take the whole width of a page a good size is 2560 px. Screens have a resploution much smaller than print images so digital images can be considerably smaller and still fill space. 72 ppi it the resolution of Screens while standard for printing is 300 dpi.</p>
+        <h2>What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)</h2>
+        <p>Tags are a series of default values recognized in HTML. Tags are used to identify conent on a page, and create a sense of hierarchy. Tags have a default styling but it can be altered depending ont he design of the page. </p>
+        <p>Classes and IDs are both hooks. We attatch hooks to diffrent tags in order to alter or reference them with out calling the defualt value of the tag. The big difference between is the IDs are designed to only use on elements where they're being used once. Classes are more general and can be applied any number of times. An element can have both a class and an ID. IDs can be refrenced by web pages to navigate to specific locations on a page, which is why it becomes important to use them only once. In additon certain Javascript functionalities need to refrence classes or IDs so they cannot be used interchangably. </p>
+        <p>tags provice meaning.</p>
+        <h2>Why is Web Accessibility important?</h2>
+        <p>Web Accessibility is important to expanding reach and delivering a positive user experience. Web asccessibility is actually requiered by law in some cases and considered a human right for people with disabilities. </p> <p>Web accesinility can be provided through using alt- text on images for the visually impared, providing alternative navigational features, and voice control functionality.</p>
         </EssayStyled>
 
     );
