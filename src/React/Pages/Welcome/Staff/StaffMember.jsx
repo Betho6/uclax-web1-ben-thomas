@@ -18,6 +18,7 @@ const StaffMember = ({member}) => {
     const handleOnShow = () => {
         showLightboxUpdate(true);
     }
+
     return (
         <StaffMemberStyled className='StaffMember'>
             <div class='piece' onClick= { handleOnShow }>           
@@ -25,7 +26,8 @@ const StaffMember = ({member}) => {
                 <h3>{member.name}</h3>
             </div>
             
-            <Lightbox
+
+            <Lightbox 
                 show= { showLightbox }
                 onHide={ handleOnHide }
                 width= '200px'

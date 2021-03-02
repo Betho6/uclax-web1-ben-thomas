@@ -5,15 +5,21 @@ import styled from 'styled-components';
 import Light from './Light.jsx'
 
 const Lightbox = ({ show, onHide, children, width='340px' }) => {
+
     
     if (!show) { return '';}
 
+
+    if (!show) { return '';}
+    
     return (
         <LightboxStyled className='Lightbox' onClick= {onHide}>
             <Light onHide= {onHide} width={ width }>
                 {children}
             </Light>
         </LightboxStyled>        
+
+        </LightboxStyled>
     );
 }
 
@@ -29,5 +35,5 @@ const LightboxStyled = styled.div`
     right: 0px;
 
     z-index: 1000;
-    
+
 `;
