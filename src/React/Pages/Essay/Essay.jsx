@@ -56,6 +56,7 @@ const Essay = () => {
         </h2>
         <p>An Image should be used as part of the conent when it is important for understanding the information on the page. One advantage of images declared with an HTML img tag is the ability to add alternate text. This helps for accesibility, so if the images are requiered for understanding the conent of the page it should be written using an HTML tag. Another benifit is for Search Engine optimization. Web Search engines do not see images so they will pull results using alternate text.
         </p>Incorperating an image into the apperaence using CSS is optimal when the image serves the display but not the content of the site. Using CSS you have easier options to manipulate and style your image, or incorperate it into the background.<p></p>
+        
         <h2>What is considered the right size for an image or video asset?</h2>
         <p>When building your application asset size is important as it can effect load times and search engine opimization. The ideal size for an image is only large enough to fill the container its in. For an image designed to take the whole width of a page a good size is 2560 px. Screens have a resploution much smaller than print images so digital images can be considerably smaller and still fill space. 72 ppi it the resolution of Screens while standard for printing is 300 dpi.</p>
         <h2>What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)</h2>
@@ -64,6 +65,11 @@ const Essay = () => {
         <p>tags provice meaning.</p>
         <h2>Why is Web Accessibility important?</h2>
         <p>Web Accessibility is important to expanding reach and delivering a positive user experience. Web asccessibility is actually requiered by law in some cases and considered a human right for people with disabilities. </p> <p>Web accesinility can be provided through using alt- text on images for the visually impared, providing alternative navigational features, and voice control functionality.</p>
+        
+        <h2>What is a CSS Preprocessor? What are some examples? In React, what are styled components? How do Styled Components violate separation of concerns?</h2>
+        <p> A CSS prerocessor is a program that generates styles for a web pages using a programs alternative writing method. Sometimes a preprocessor can allow you to do things that traditional CSS doesn't cover. Popular CSS preprocessors include Sass, LESS, Stylus, PostCSS. </p>
+        <p>React Style Components are a method of rendering CSS that uses component level styles for your page. Normal CSS is written on a style sheet and linked to a page requiering you to use seperate class names for any components that may appear diffrently. React Styled components are native to the JSX component on which they're written, so they can be used to call out individual tags that may not be effected on other part of the page. In addition to this it can make troubleshooting more simple by localising stylistic changes.</p>
+        <p>Seperation of concerns is the idea that diffrent programing languages should exist in diffrent documents within a web page. In example a seperate script document for Javascript, and a style sheet for CSS imported into your index file. React Style components exist and are written within the JSX documents that get loaded into your HTML document. Putting these components all int he same document violates the seperation of concerns.</p>
         </EssayStyled>
 
     );

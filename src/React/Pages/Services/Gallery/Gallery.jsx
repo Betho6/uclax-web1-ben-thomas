@@ -10,14 +10,8 @@ const Gallery = ({services, catChosen }) => {
         <GalleryStyled className='Gallery'>
             {
                 services.packages
-<<<<<<< HEAD
-                .filter((item) =>{
-                    return (catChosen === 'All' || item.category === catChosen)
-                })
-=======
                     .filter((item) =>{
                         console.log('item.category', item.category);
->>>>>>> e309e81769f75ed9e784a115d67101d6ec23038d
 
                         return (catChosen === 'All' || item.category === catChosen)
                     })
