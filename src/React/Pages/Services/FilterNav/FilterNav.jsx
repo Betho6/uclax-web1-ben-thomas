@@ -7,7 +7,7 @@ import FilterNavButton from './FilterNavButton.jsx'
 const FilterNav = ({ services, catChosen, catChosenUpdate }) => {
     return (
         <FilterNavStyled className='FilterNav'>
-
+        {
             services.categories.map((category, idx) => {
                 return <FilterNavButton
                             key= {idx} 
@@ -15,10 +15,11 @@ const FilterNav = ({ services, catChosen, catChosenUpdate }) => {
                             catChosen={ catChosen }
                             catChosenUpdate={ catChosenUpdate }
                         />
-                })
+            })
         }
         </FilterNavStyled>
-    );       
+    ); 
+}
 
 export default FilterNav;
 

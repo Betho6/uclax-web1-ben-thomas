@@ -2,12 +2,6 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-<<<<<<< HEAD
-import LightBox from '../../../Shared/Lightbox/LightBox.jsx'
-=======
->>>>>>> e309e81769f75ed9e784a115d67101d6ec23038d
-
-import LightBox from '../../../Shared/Lightbox/LightBox.jsx'
 
 const GalleryItem = ({ item }) => {
     const [showLightbox, showLightboxUpdate] = useState (false)
@@ -35,7 +29,6 @@ const GalleryItem = ({ item }) => {
     }
 
     return (
-<<<<<<< HEAD
         <GalleryItemStyled className='GalleryItem'>
         <div class='piece' onClick= { handleOnShow }>           
             <img src={ item.image } alt={item.title} />
@@ -53,9 +46,6 @@ const GalleryItem = ({ item }) => {
             <h3>{ item.category }</h3>  
         </LightBox>
 
-
-        </GalleryItemStyled>
-=======
             <GalleryItemStyled className='GalleryItem'>
             <div class='piece' onClick= { handleOnShow }>           
                 <img src={ item.image } alt={item.title} />
@@ -75,7 +65,6 @@ const GalleryItem = ({ item }) => {
 
 
             </GalleryItemStyled>
->>>>>>> e309e81769f75ed9e784a115d67101d6ec23038d
     );
 }
 

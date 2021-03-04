@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FilterNavButton = ( {category, catChosen, catChosenUpdate}) => {
-<<<<<<< HEAD
-=======
+const FilterNavButton = ( {category, catChosen, catChosenUpdate}) =>{
 
->>>>>>> e309e81769f75ed9e784a115d67101d6ec23038d
     const handleCatUpdate =() =>{
         catChosenUpdate(category);
     }
