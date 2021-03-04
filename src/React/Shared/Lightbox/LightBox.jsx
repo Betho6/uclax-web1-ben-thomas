@@ -18,8 +18,6 @@ const Lightbox = ({ show, onHide, children, width='340px' }) => {
                 {children}
             </Light>
         </LightboxStyled>        
-
-        </LightboxStyled>
     );
 }
 
