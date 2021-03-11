@@ -5,7 +5,7 @@ const Button = () => {
 
     return (
         <ButtonStyled className='Button'>
-            Button 
+            { Children } 
         </ButtonStyled>
     );
 }
